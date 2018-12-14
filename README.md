@@ -1,10 +1,10 @@
 # Grubhub sample iOS App
-![Image](https://imgur.com/dE9RD0m)
+![Image](RiderClient/Resources/Assets.xcassets/ezgif-1-da0df3e6faf9.gif)
 ## Purpose
 To demonstrate the functionality of Pusher for Grubhub
 
 ## Storyboard
-![Storyboard](i.imgur.com/Cozu3GW.mp4)
+![Storyboard](RiderClient/Resources/Assets.xcassets/Main_storyboard_—_Edited.png)
 
 ## Notes
 - MVP for demonstation purposes
