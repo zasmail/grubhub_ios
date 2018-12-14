@@ -21,6 +21,7 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     //    @IBOutlet weak var ratingView: CosmosView!
+    @IBOutlet weak var fireLabel: UILabel?
     
     static let placeholder = UIImage(named: "placeholder")
     
@@ -34,7 +35,13 @@ class ItemCell: UITableViewCell {
             typeLabel.highlightedText = item.type_highlighted
             typeLabel.highlightedTextColor = UIColor.black
             typeLabel.highlightedBackgroundColor = ColorConstants.lightYellowColor
-
+            
+            let fire:String? = item.fire
+            if fire != nil{
+                fireLabel?.highlightedText = fire!
+//                nameLabel.highlightedText = fire!
+            }
+            
 
             if let price = item.price {
                 priceLabel.text = "$\(String(describing: price))"

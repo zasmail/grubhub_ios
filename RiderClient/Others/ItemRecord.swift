@@ -46,6 +46,14 @@ struct ItemRecord {
     var rating: Int? {
         return json["bestSellingRank"] as? Int
     }
+    var lastOrdered:Double?{
+        return json["last_ordered"] as? Double
+    }
+    
+    var fire: String? {
+        
+        return json["fire"] as? String
+    }
     
     var imageUrl: URL? {
         guard let urlString = json["best_image"] as? String else { return nil }

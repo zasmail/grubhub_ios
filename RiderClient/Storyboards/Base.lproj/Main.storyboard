@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -478,6 +477,12 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcE-uv-ZoN">
+                                                    <rect key="frame" x="318" y="78" width="29" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="leadingMargin" secondItem="pSs-AR-CBX" secondAttribute="leading" id="4XC-2m-5bN"/>
@@ -487,7 +492,9 @@
                                                 <constraint firstItem="ReX-Ra-f2W" firstAttribute="top" secondItem="HJ0-f5-vyw" secondAttribute="bottom" constant="8" id="GrC-tx-eHR"/>
                                                 <constraint firstItem="g0I-fK-UhC" firstAttribute="leading" secondItem="pSs-AR-CBX" secondAttribute="trailing" constant="12" id="HOB-ww-Mdi"/>
                                                 <constraint firstAttribute="topMargin" secondItem="g0I-fK-UhC" secondAttribute="top" id="P2E-DA-csS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gcE-uv-ZoN" secondAttribute="trailing" constant="13" id="QcT-6S-GqQ"/>
                                                 <constraint firstItem="269-9c-80B" firstAttribute="top" secondItem="g0I-fK-UhC" secondAttribute="bottom" id="QeQ-kc-dbl"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="gcE-uv-ZoN" secondAttribute="bottom" id="SGo-Tn-Ihg"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ReX-Ra-f2W" secondAttribute="bottom" constant="22" id="aDU-OQ-IQQ"/>
                                                 <constraint firstAttribute="topMargin" secondItem="pSs-AR-CBX" secondAttribute="top" id="gwb-BK-KGL"/>
                                                 <constraint firstItem="ReX-Ra-f2W" firstAttribute="leading" secondItem="pSs-AR-CBX" secondAttribute="trailing" constant="8" id="hOU-Gz-hUJ"/>
@@ -498,6 +505,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="fireLabel" destination="gcE-uv-ZoN" id="Oq5-OR-Jjj"/>
                                             <outlet property="itemImageView" destination="pSs-AR-CBX" id="v0E-uy-TFD"/>
                                             <outlet property="nameLabel" destination="g0I-fK-UhC" id="Eyv-JN-IgM"/>
                                             <outlet property="priceLabel" destination="HJ0-f5-vyw" id="lhB-JJ-UZ2"/>
@@ -589,7 +597,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAA-l6-2KY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82" y="-718"/>
+            <point key="canvasLocation" x="80.799999999999997" y="-718.29085457271367"/>
         </scene>
     </scenes>
     <resources>
